@@ -1,0 +1,2 @@
+# pythonOdev
+Turkstudentco python ödevleri
