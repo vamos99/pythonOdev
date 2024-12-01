@@ -77,4 +77,4 @@ if __name__ == "__main__":
             print("Çıkıldı.")
             break
         else:
-            print("Geçersiz seçenek!")
+            print("Geçersiz seçenek")
