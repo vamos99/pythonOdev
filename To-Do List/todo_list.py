@@ -1,20 +1,3 @@
-#Proje Tanımı: 
-""" 
-Bir yapılacaklar listesi uygulaması oluşturun. Kullanıcı görev ekleyebilir, görevleri tamamlandı olarak işaretleyebilir ve tamamlananları silebilir.
-
-İstenilen Özellikler:
-- Görev ekleme.
-- Görevleri tamamlama ve tamamlandı olarak işaretleme.
-- Görev listesini görüntüleme (tamamlananlar ve tamamlanmayanlar ayrı listelerde tutulabilir).
-- Görev silme.
-- Verileri bir .txt dosyasına kaydetme ve program çalıştığında yeniden yükleme.
-    ! txt yerine json da yapmayı tercih ettim.
-
-Yönerge:
-Bir Task (Görev) sınıfı oluşturun. Bu sınıf, görev adı ve tamamlanma durumunu (True/False) saklasın.
-Bir TaskManager sınıfı oluşturun. Bu sınıf, görevlerin eklenmesi, silinmesi ve yönetilmesi için gerekli metotları içersin.
-"""
-import json
 
 class Task:
     def __init__(self, task_name, is_task_completed=False):
@@ -78,14 +61,14 @@ if __name__ == "__main__":
             task_manager.add_task(task_name)
 
         elif choice == "3":
-            task_index = input("Silmek istediğiniz görev numarasını: ")
+            task_index = input("Silmek istediğiniz görev numarası: ")
             if task_index.isdigit():
                 task_manager.delete_task(int(task_index))
             else:
                 print("Geçersiz numara")
 
         elif choice == "4":
-            task_index = input("Tamamlamak istediğiniz görev numarasını: ")
+            task_index = input("Tamamlamak istediğiniz görev numarası: ")
             if task_index.isdigit():
                 task_manager.complete_task(int(task_index))
             else:
