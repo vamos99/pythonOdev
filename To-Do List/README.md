@@ -21,7 +21,7 @@ Bu proje, kullanıcıların görevlerini ekleyebileceği, tamamlayabileceği, si
   - `add_task`: Yeni bir görev ekler.
   - `delete_task`: Belirtilen indeks numarasına göre bir görevi siler.
   - `complete_task`: Belirtilen indeks numarasındaki görevi tamamlanmış olarak işaretler.
-  - `show_tasks`: Tüm görevleri gösterir. Görevlerin tamamlanma durumuna göre listeler.
+  - `show_tasks: Tüm görevleri gösterir. Görevlerin tamamlanma durumuna göre listeler.
 
 ## Ana İşlevler:
 - Görev Ekleme: Yeni bir görev adı girilir ve görev listeye eklenir.
