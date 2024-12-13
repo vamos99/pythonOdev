@@ -17,6 +17,11 @@ class TaskManager:
         self.tasks = []
 
     def add_task(self, task_name):
+
+        for task in self.tasks:
+            if task["name"].lower() == task_name.lower():
+                print("Görev mevcut")
+                return
         self.tasks.append({"name": task_name, "completed": False})
         print(f"Görev eklendi: {task_name}")
     
@@ -38,7 +43,7 @@ class TaskManager:
         if len(self.tasks) == 0:
             print("Görev yok.")
         else:
-            for index, task in enumerate(self.tasks):
+            for index, task in enumerate(self.tasks, start = 1):
                 print(f"{index}. {task}")
 
 if __name__ == "__main__":
