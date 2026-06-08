@@ -1,34 +1,21 @@
-Banka Sistemi Uygulaması
+# Basic Bank
 
-Proje Tanımı:
-Bu proje, bir banka sistemi simülasyonu sağlar. Kullanıcılar hesap açabilir, para yatırabilir, para çekebilir ve bakiye sorgulaması yapabilirler.
+Basit bir banka sistemi simülasyonudur. Kullanici hesap olusturabilir, para
+yatirabilir, para cekebilir ve bakiye sorgulayabilir.
 
-Kullanılan Sınıflar:
+## Calistirma
 
-User Sınıfı:
+```bash
+python basic_bank.py
+```
 
-	•	Amaç: Kullanıcı bilgilerini saklar.
-	•	Özellikler:
-	•	user_name: Kullanıcının adı.
-	•	account_number: Hesap numarası (her kullanıcı için benzersiz).
-	•	account_balance: Hesap bakiyesi (başlangıç bakiyesi).
+## Yapi
 
-Bank Sınıfı:
+- `User`: kullanici adi, hesap numarasi ve bakiye bilgisini tutar.
+- `Bank`: hesap olusturma, hesap bulma, para yatirma, para cekme ve bakiye
+  sorgulama islemlerini yonetir.
 
-	•	Amaç: Banka işlemlerini yönetir.
-	•	Özellikler:
-	•	users_list: Kullanıcıların listesi.
-	•	Metodlar:
-	•	create_account: Yeni bir hesap oluşturur.
-	•	find_user_by_account_number: Hesap numarasına göre kullanıcıyı bulur.
-	•	deposit_money: Kullanıcının hesabına para yatırır.
-	•	withdraw_money: Kullanıcının hesabından para çeker.
-	•	check_balance: Hesap bakiyesini sorgular.
+## Not
 
-Ana İşlevler:
-
-	•	Hesap Oluşturma: Yeni bir kullanıcı hesabı oluşturulur (kullanıcı adı, hesap numarası ve başlangıç bakiyesi ile).
-	•	Para Yatırma: Belirli bir hesaba para yatırılabilir.
-	•	Para Çekme: Kullanıcı hesabından para çekilebilir (bakiye kontrolü yapılır).
-	•	Bakiye Sorgulama: Hesap bakiyesi sorgulanabilir.
-	•	Çıkış: Programdan çıkılır.
+Bu calisma Python siniflari ve temel kontrol akislarini pratik etmek icin
+hazirlanmistir. Veriler uygulama calisirken bellekte tutulur.
